@@ -1,0 +1,9 @@
+{
+  "name": "sessionsexample",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x",
+    "connect-redis": "1.4.x",
+    "linkedin-js": "0.1.4"
+  }
+}

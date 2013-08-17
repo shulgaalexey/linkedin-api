@@ -1,3 +1,26 @@
 linkedin-api is Express.js app, including:
 -LinkeIN Open API usage
 -Sessions
+
+----------------------------------------------------------
+Useful links:
+
+Node.js + Express.js + Compound.js
+https://gist.github.com/devrishik/5866333
+
+Node.js
+http://nodejs.org/api/all.html
+
+Express.js
+http://expressjs.com/guide.html
+http://blog.modulus.io/nodejs-and-express-sessions
+https://github.com/masylum/linkedin-js/blob/master/tests/linkedin_test.js
+
+Compound.js
+http://compoundjs.com/docs.html
+https://github.com/compoundjs/guides/blob/master/basics/crash-course.md
+
+Node-inspector
+https://github.com/node-inspector/node-inspector
+
+
