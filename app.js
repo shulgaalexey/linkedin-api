@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var RedisStore = require('connect-redis')(express);
-var linkedin_client = require('linkedin-js')('XXX', 'YYY', 'http://localhost:3003/auth');
+var linkedin_client = require('linkedin-js')('APIKEY', 'SWCRETKEY', 'http://localhost:3003/auth');
   
 
 app.use(express.cookieParser());
@@ -42,8 +42,8 @@ app.get('/people', function (req, res) {
   
   linkedin_client.apiCall('GET',
 
-//'/people-search?keywords=linkedin'
-'/people/~'
+'/people-search?keywords=linkedin'
+//'/people/~'
 
     ,{
       token: {
@@ -57,7 +57,10 @@ app.get('/people', function (req, res) {
       console.log(error);
 
       //res.render('message_sent');
-      res.send('people_gotten');
+      //res.send('API usage:');
+      if(result!=null) res.send(result);
+      else if(error!=null) res.send(error);
+      else res.send('API usage:');
     }
   );
 });
