@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 var RedisStore = require('connect-redis')(express);
 var linkedin_client = require('linkedin-js')('APIKEY', 'SWCRETKEY', 'http://localhost:3003/auth');
-  
+
+// comment  
 
 app.use(express.cookieParser());
 //app.use(express.session({secret: '1234567890QWERTY'}));
